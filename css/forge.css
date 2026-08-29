@@ -622,14 +622,17 @@ header.site-header {
 /* ==========================================================================
    RECENT DEPLOYMENTS
    ========================================================================== */
-.deploy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.deploy-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .deploy-card { background: var(--panel); border: 1px solid var(--panel-line); padding: 22px; }
 .deploy-card .d-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
 .deploy-card .d-num { font-family: var(--font-mono); font-size: 11px; color: var(--steel); letter-spacing: 1px; }
 .deploy-card h3 { font-family: var(--font-display); font-size: 14px; margin-bottom: 8px; }
 .deploy-card .d-meta { font-family: var(--font-mono); font-size: 12px; color: var(--steel-light); margin-bottom: 14px; }
+.deploy-card .d-note { font-size: 14px; color: var(--steel-light); margin-bottom: 14px; }
+.deploy-card .d-note b { color: var(--text-onDark); font-family: var(--font-mono); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 4px; }
 .deploy-card .d-row { display: flex; justify-content: space-between; font-size: 13px; padding: 8px 0; border-top: 1px solid var(--panel-line); color: var(--steel-light); }
 .deploy-card .d-row b { color: var(--text-onDark); font-weight: 600; }
+.status-pill.is-sample { color: var(--steel); }
 
 /* ==========================================================================
    INDUSTRIES
