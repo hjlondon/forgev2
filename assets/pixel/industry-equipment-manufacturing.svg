@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges">
+  <!-- pixel icon: equipment manufacturing (conveyor + unit) -->
+  <rect x="4" y="22" width="24" height="3" fill="#8b93a7"/>
+  <rect x="6" y="24" width="2" height="4" fill="#171b28"/>
+  <rect x="24" y="24" width="2" height="4" fill="#171b28"/>
+  <rect x="10" y="10" width="12" height="12" fill="#e8eaf1"/>
+  <rect x="10" y="10" width="12" height="3" fill="#f28b1e"/>
+  <rect x="13" y="16" width="6" height="2" fill="#171b28"/>
+</svg>

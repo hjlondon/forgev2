@@ -632,7 +632,28 @@ header.site-header {
 .deploy-card .d-note b { color: var(--text-onDark); font-family: var(--font-mono); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; display: block; margin-bottom: 4px; }
 .deploy-card .d-row { display: flex; justify-content: space-between; font-size: 13px; padding: 8px 0; border-top: 1px solid var(--panel-line); color: var(--steel-light); }
 .deploy-card .d-row b { color: var(--text-onDark); font-weight: 600; }
-.status-pill.is-sample { color: var(--steel); }
+.status-pill.is-illustrative { color: var(--steel); }
+
+.deploy-trade-group { margin-bottom: 40px; }
+.deploy-trade-group:last-child { margin-bottom: 0; }
+.deploy-trade-heading {
+  font-family: var(--font-mono); font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase;
+  color: var(--orange); margin-bottom: 16px; display: flex; align-items: center; gap: 10px;
+}
+.deploy-trade-heading::after { content: ""; flex: 1; height: 1px; background: var(--panel-line); }
+
+.deploy-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.deploy-card.compact { padding: 18px; }
+.deploy-card.compact h3 { font-size: 12px; }
+.deploy-card.compact .d-note { font-size: 13px; margin-bottom: 10px; }
+.deploy-card.compact .d-row { font-size: 12px; padding: 6px 0; }
+
+@media (max-width: 900px) {
+  .deploy-grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+  .deploy-grid-3 { grid-template-columns: 1fr; }
+}
 
 /* ==========================================================================
    INDUSTRIES
@@ -660,10 +681,14 @@ header.site-header {
   background: linear-gradient(0deg, rgba(14,17,25,0.92) 10%, rgba(14,17,25,0.15) 70%);
 }
 .industry-card .i-content { position: relative; z-index: 1; padding: 20px; width: 100%; }
-.industry-card .i-tag {
-  font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; text-transform: uppercase;
-  color: var(--steel-light); position: absolute; top: 16px; left: 16px; z-index: 1;
+.industry-card .i-icon {
+  position: absolute; top: 16px; left: 16px; z-index: 1;
+  width: 40px; height: 40px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--panel-line);
+  background: rgba(14,17,25,0.6);
 }
+.industry-card .i-icon img { width: 24px; height: 24px; }
 .industry-card h3 { font-family: var(--font-display); font-size: 13px; margin-bottom: 8px; transition: color var(--dur-fast) var(--ease-standard); }
 .industry-card:hover h3 { color: var(--orange); }
 .industry-card p { font-size: 13px; color: var(--steel-light); }
