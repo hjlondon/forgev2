@@ -68,7 +68,11 @@
         <h2>Get In Touch</h2>
         <p class="section-copy">Email <a href="mailto:samueljames@forgetalentpartner.com" style="color:var(--orange);">samueljames@forgetalentpartner.com</a> or use the form to start a search.</p>
       </div>
-      <form class="cta-form" data-reveal action="mailto:samueljames@forgetalentpartner.com" method="post" enctype="text/plain">
+      <form class="cta-form" data-reveal name="contact" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="position:absolute; left:-9999px;" aria-hidden="true">
+          <label>Leave this field blank: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+        </p>
         <div class="form-grid">
           <div class="form-field"><label for="c-name">Name</label><input id="c-name" name="name" type="text" required></div>
           <div class="form-field"><label for="c-company">Company</label><input id="c-company" name="company" type="text" required></div>

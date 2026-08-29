@@ -419,7 +419,11 @@
         <p class="section-copy">Tell Forge what you need and we will start mapping the relevant market.</p>
       </div>
 
-      <form class="cta-form" data-reveal action="mailto:samueljames@forgetalentpartner.com" method="post" enctype="text/plain">
+      <form class="cta-form" data-reveal name="employer-intake" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="employer-intake">
+        <p style="position:absolute; left:-9999px;" aria-hidden="true">
+          <label>Leave this field blank: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+        </p>
         <div class="form-grid">
           <div class="form-field">
             <label for="role">Role needed</label>
