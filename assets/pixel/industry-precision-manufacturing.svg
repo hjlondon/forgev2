@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="crispEdges">
-  <!-- pixel icon: precision manufacturing (caliper / tight tolerance) -->
-  <rect x="4" y="14" width="24" height="4" fill="#8b93a7"/>
-  <rect x="4" y="10" width="2" height="12" fill="#e8eaf1"/>
-  <rect x="26" y="10" width="2" height="12" fill="#e8eaf1"/>
-  <rect x="10" y="16" width="12" height="2" fill="#171b28"/>
-  <rect x="14" y="6" width="2" height="8" fill="#f28b1e"/>
-  <rect x="14" y="18" width="2" height="8" fill="#f28b1e"/>
-</svg>

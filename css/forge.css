@@ -681,14 +681,6 @@ header.site-header {
   background: linear-gradient(0deg, rgba(14,17,25,0.92) 10%, rgba(14,17,25,0.15) 70%);
 }
 .industry-card .i-content { position: relative; z-index: 1; padding: 20px; width: 100%; }
-.industry-card .i-icon {
-  position: absolute; top: 16px; left: 16px; z-index: 1;
-  width: 40px; height: 40px;
-  display: flex; align-items: center; justify-content: center;
-  border: 1px solid var(--panel-line);
-  background: rgba(14,17,25,0.6);
-}
-.industry-card .i-icon img { width: 24px; height: 24px; }
 .industry-card h3 { font-family: var(--font-display); font-size: 13px; margin-bottom: 8px; transition: color var(--dur-fast) var(--ease-standard); }
 .industry-card:hover h3 { color: var(--orange); }
 .industry-card p { font-size: 13px; color: var(--steel-light); }
