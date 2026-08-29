@@ -777,6 +777,15 @@ footer.site-footer { background: var(--ink); border-top: 1px solid var(--panel-l
 .industry-list-card { border: 1px solid var(--panel-line); background: var(--panel); padding: 24px; }
 .industry-list-card h3 { font-family: var(--font-display); font-size: 14px; margin-bottom: 10px; }
 
+.company-types-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.company-types-grid .industry-list-card h3 { color: var(--orange); }
+@media (max-width: 900px) {
+  .company-types-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .company-types-grid { grid-template-columns: 1fr; }
+}
+
 /* ---- reveal utility (GSAP-driven, CSS provides no-JS/reduced-motion fallback) ---- */
 .js-reveal { opacity: 1; }
 .no-js-fallback-hidden { opacity: 0; }
