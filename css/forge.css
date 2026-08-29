@@ -365,9 +365,32 @@ header.site-header {
 .hero-art {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
+
+.workforce-select-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--text-onDark);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.workforce-select-label .dot {
+  width: 9px; height: 9px;
+  background: var(--orange);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(242,139,30,0.18);
+}
+
+.hero-dots-lg { margin-top: 0; margin-bottom: 20px; gap: 12px; }
+.hero-dots-lg button { width: 40px; height: 5px; }
 .hero-art-frame {
   position: relative;
   border: 1px solid var(--panel-line);
