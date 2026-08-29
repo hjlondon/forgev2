@@ -58,29 +58,21 @@
     <div class="wrap">
       <span class="eyebrow">Open Roles</span>
       <h1 class="display">AVAILABLE JOBS</h1>
-      <p class="body-lede">Live vacancies will be listed here once the jobs board is connected to a live source.</p>
+      <p class="body-lede">Live vacancies are pulled directly from our applicant tracking system.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="wrap">
       <div class="job-filters" data-reveal>
-        <select aria-label="Filter by trade"><option>All Trades</option><option>Welding</option><option>CNC &amp; Machining</option><option>Fabrication</option><option>Maintenance</option></select>
-        <select aria-label="Filter by location"><option>All Locations</option></select>
-        <select aria-label="Filter by employment type"><option>All Types</option><option>Direct Hire</option><option>Contract / Temporary</option></select>
-        <select aria-label="Filter by industry"><option>All Industries</option></select>
+        <select id="filter-trade" aria-label="Filter by trade"><option>All Trades</option><option>Welding</option><option>CNC &amp; Machining</option><option>Fabrication</option><option>Maintenance</option></select>
+        <select id="filter-location" aria-label="Filter by location"><option>All Locations</option></select>
+        <select id="filter-type" aria-label="Filter by employment type"><option>All Types</option></select>
+        <select id="filter-industry" aria-label="Filter by industry"><option>All Industries</option></select>
       </div>
-      <span class="placeholder-note">Filters are wired for a future ATS/API integration &mdash; no live roles loaded yet.</span>
+      <p id="jobs-status" class="placeholder-note">Loading live roles...</p>
 
-      <div style="margin-top:24px;">
-        <div class="job-card" data-reveal>
-          <div>
-            <h3>Role Title &mdash; TBC</h3>
-            <div class="j-meta"><span>Location &mdash; TBC</span><span>Compensation &mdash; TBC</span><span>Direct Hire</span><span>Industry &mdash; TBC</span><span>Posted &mdash; TBC</span></div>
-          </div>
-          <a class="btn small ghost" href="../contact.html">View Role</a>
-        </div>
-      </div>
+      <div id="jobs-list" style="margin-top:24px;"></div>
     </div>
   </section>
 
@@ -143,5 +135,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 <script src="../js/forge-motion.js" defer></script>
 <script src="../js/forge-app.js" defer></script>
+<script src="../js/jobs.js" defer></script>
 </body>
 </html>
