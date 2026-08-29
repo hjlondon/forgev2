@@ -680,6 +680,13 @@ header.site-header {
   object-fit: cover;
   display: block;
 }
+.industry-card .photo-placeholder::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: var(--orange);
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+}
 .industry-card::after {
   content: "";
   position: absolute; inset: 0;
